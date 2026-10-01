@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Open Workspace</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="module">
+    import { boot } from "./js/app.js";
+    window.addEventListener("DOMContentLoaded", () => boot().catch((e) => {
+      document.body.innerHTML = "<pre style='padding:24px'>" + String(e?.stack || e) + "</pre>";
+    }));
+  </script>
+</head>
+<body>
+  <noscript>Open Workspace requires JavaScript.</noscript>
+</body>
+</html>

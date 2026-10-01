@@ -1,0 +1,20 @@
+{
+  "name": "open-workspace",
+  "version": "1.0.0",
+  "description": "Open Workspace - lightweight desktop workspace manager for Windows",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "frontend": "echo frontend is static in src/",
+    "check": "node scripts/check.mjs"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.12.1"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.1"
+  }
+}
